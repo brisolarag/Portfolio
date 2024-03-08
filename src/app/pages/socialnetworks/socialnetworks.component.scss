@@ -1,0 +1,115 @@
+$sociaisN-font: 20px;
+
+.sociaisN-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: $sociaisN-font;
+}
+
+.sociaisN-container h1 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+
+}
+
+.sociaisN-wrapper {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Para navegadores baseados em Firefox */
+    -ms-overflow-style: none; 
+    margin-top: 15px;
+
+    display: flex;
+}
+.sociaisN-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.sociaisN-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+}
+
+.social-N {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 10px;
+
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #41526321;
+    color: #000000;
+    font-weight: 600;
+}
+
+.socialN-content {
+    margin-top: 20px;
+    height: 40%;
+}
+
+.social-N h4 {
+    font-size: 1.2em;
+    letter-spacing: 8px;
+    color: #000000;
+    font-weight: 700;
+
+    text-shadow: 0px 7px 20px #212529;
+}
+
+.social-N:last-child {
+    border-bottom: none;
+
+}
+
+.social-N a {
+    font-weight: 600;
+    color: #7D0A0A;
+    text-decoration: none;
+}
+
+.social-N a:hover {
+    font-weight: 700;
+    color: #4c0707;
+    text-decoration: underline;
+}
+
+@media (max-width: 1005px) {
+    .sociaisN-wrapper {
+        overflow-y: scroll;
+    }
+    .sociaisN-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialN-content {
+        height: 60%;
+    }
+}
+
+@media (max-width: 250px) {
+    .social-N a {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+

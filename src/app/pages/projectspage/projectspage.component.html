@@ -1,0 +1,92 @@
+<div class="projects-container">
+    <div class="projects-wrapper">
+
+        <div class="projects-filter">
+            
+            
+            <select class="form-select form-select-sm mb-3" aria-label="Large select example" (change)="onYearChange($event)">
+                <option value="all">{{allForm}}</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+            </select>
+
+            <h2>{{projectsTitle}}</h2>
+        </div>
+
+        <div class="projects-box">
+
+            <div class="projects-content">
+
+                @if (selectedYear == 'all') {
+                    @for (project of projects; track project.id) {
+                        <div class="projects-project">
+                            <div class="project-desc">
+                                <h5>{{ isLanguageEnglish() ? project.titleUs : project.titleBr }}</h5>
+                                <p class="projects-sdsc">{{ isLanguageEnglish() ? project.shortDescUs : project.shortDescBr }}</p>
+                                <p>{{ isLanguageEnglish() ? project.dataUs : project.dataBr }}</p>
+                            </div>      
+        
+                            <div class="project-btns">
+                                <button type="button" class="btn btn-secondary btn-sm btn-projects-2 disabled">{{moreBtn}}</button>
+                                <button type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button>
+                            </div>
+                        </div>
+                    }
+                }
+                @if (selectedYear == '2024') {
+                    @for (project of projects2024; track project.id) {
+                        <div class="projects-project">
+                            <div class="project-desc">
+                                <h5>{{ isLanguageEnglish() ? project.titleUs : project.titleBr }}</h5>
+                                <p class="projects-sdsc">{{ isLanguageEnglish() ? project.shortDescUs : project.shortDescBr }}</p>
+                                <p>{{ isLanguageEnglish() ? project.dataUs : project.dataBr }}</p>
+                            </div>      
+        
+                            <div class="project-btns">
+                                <button type="button" class="btn btn-secondary btn-sm btn-projects-1">Github</button>
+                                <button type="button" class="btn btn-light btn-sm btn-projects-2">{{moreBtn}}</button>
+                            </div>
+                        </div>
+                    }
+                }
+                @if (selectedYear == '2023') {
+                    @for (project of projects2023; track project.id) {
+                        <div class="projects-project">
+                            <div class="project-desc">
+                                <h5>{{ isLanguageEnglish() ? project.titleUs : project.titleBr }}</h5>
+                                <p class="projects-sdsc">{{ isLanguageEnglish() ? project.shortDescUs : project.shortDescBr }}</p>
+                                <p>{{ isLanguageEnglish() ? project.dataUs : project.dataBr }}</p>
+                            </div>      
+        
+                            <div class="project-btns">
+                                <button type="button" class="btn btn-secondary btn-sm btn-projects-1">Github</button>
+                                <button type="button" class="btn btn-light btn-sm btn-projects-2">{{moreBtn}}</button>
+                            </div>
+                        </div>
+                    }
+                }
+                @if (selectedYear == '2022') {
+                    @for (project of projects2022; track project.id) {
+                        <div class="projects-project">
+                            <div class="project-desc">
+                                <h5>{{ isLanguageEnglish() ? project.titleUs : project.titleBr }}</h5>
+                                <p class="projects-sdsc">{{ isLanguageEnglish() ? project.shortDescUs : project.shortDescBr }}</p>
+                                <p>{{ isLanguageEnglish() ? project.dataUs : project.dataBr }}</p>
+                            </div>      
+        
+                            <div class="project-btns">
+                                <button type="button" class="btn btn-secondary btn-sm btn-projects-1">Github</button>
+                                <button type="button" class="btn btn-light btn-sm btn-projects-2">{{moreBtn}}</button>
+                            </div>
+                        </div>
+                    }
+                }
+                
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

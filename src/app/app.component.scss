@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+#app-content  {
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+} 
+
+#containerapp {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.btn-next{
+    position: absolute;
+    bottom: 10vh;
+}
+
+.btn-next-left {
+    left: 1vw;
+}
+
+.btn-next-right {
+    right: 1vw;
+}
+
+#app-content {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #E5E1DA;
+
+}
+
+
+

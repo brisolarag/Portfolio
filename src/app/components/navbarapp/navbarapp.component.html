@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+  <a class="navbar-brand" href="#"><img src="assets/navbar/logo.svg" alt="Logo" style="max-height: 50px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="navigateToHome()">{{home}}</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"(click)="navigateToProjects()" >{{projects}}</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="navigateToSocials()">{{redesSociais}}</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="navigateToContact()">{{contact}}</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link download-CV" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="downloadCV()">{{downloadCVLabel}}</a>
+          </li>
+      </ul>
+      <div class="btn-group ml-auto nav-switches" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="options-base" id="optionPTBR" autocomplete="off" checked (click)="changeLanguage('pt-br')">
+          <label class="btn btn-outline-light" for="optionPTBR">pt-br</label>
+
+          <input type="radio" class="btn-check" name="options-base" id="optionENUS" autocomplete="off" (click)="changeLanguage('en-us')">
+          <label class="btn btn-outline-light" for="optionENUS">en-us</label>
+      </div>
+  </div>
+</nav>

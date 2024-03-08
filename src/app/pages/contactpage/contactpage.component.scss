@@ -1,0 +1,43 @@
+$contact-font: 20px;
+$contact-font-xl: 15px;
+$contact-font-x: 13px;
+$contact-font-m: 10px;
+$contact-font-s: 8px;
+$contact-font-ss: 5px;
+
+$contact-font-title-xxl: 4.8em;
+$contact-font-title-xl: 4em;
+$contact-font-title-x: 3.5em;
+$contact-font-title-m: 3.0em;
+$contact-font-title-s: 2.8em;
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $contact-font;
+}
+
+.contact-wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-wrapper h1 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.contact-form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+
+

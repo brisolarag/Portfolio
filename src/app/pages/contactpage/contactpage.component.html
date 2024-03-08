@@ -1,0 +1,27 @@
+<div class="contact-container">
+    <div class="contact-wrapper">
+        <h1>{{contactTitle}}</h1>
+
+
+        <div class="contact-form">
+
+            <div class="mb-3">
+                <label for="name-sent" class="form-label">{{nameLabel}}</label>
+                <input type="text" class="form-control" id="name-sent" placeholder={{namePlaceHolder}}>
+            </div>
+            <div class="mb-3">
+                <label for="email-sent" class="form-label">Email:</label>
+                <input type="text" class="form-control" id="email-sent" placeholder={{emailPlaceHolder}}>
+            </div>
+            <div class="mb-3">
+                <label for="message-sent" class="form-label">{{messageLabel}}</label>
+                <textarea class="form-control" id="message-sent" rows="3" placeholder={{messagePlaceHolder}}></textarea>
+            </div>
+            <div class="col-auto btn-send-div">
+                <button type="submit" class="btn btn-primary mb-3 disabled" id="btn-send">{{btnSend}}</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>

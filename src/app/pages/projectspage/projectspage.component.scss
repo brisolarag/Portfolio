@@ -1,0 +1,131 @@
+$projects-font: 20px;
+$cor-projeto: rgb(255, 255, 255);
+
+.projects-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $projects-font;
+}
+
+.projects-wrapper {
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.projects-filter {
+    width: 100%;
+    height: 13vh;
+    padding: 1vw;
+}
+
+.projects-filter h2 {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.projects-box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.projects-content {
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-auto-rows: 135px;
+    gap:15px;
+    
+    padding: 1vw;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+.projects-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.projects-project {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 560px;
+    background-color: $cor-projeto;
+
+    border-radius: 5px;
+    padding: 5px;
+
+    grid-template-columns: 70% 30%;
+    display: grid;
+    overflow: hidden;
+    
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+
+.project-desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-btns {
+    box-sizing: border-box;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+
+}
+
+.project-btns button {
+    border-radius: 5px;
+}
+
+.project-desc h5, .project-desc p {
+    padding-left: 2px;
+    margin: 1px;
+}
+
+.project-desc h5 {
+    font-size: 14px;
+    color: #212529;
+    text-shadow: -1px 2px 5px rgba(108, 117, 125, 1);
+}
+
+
+.project-desc p {
+    font-size: 12px;
+    color: #3e4347;
+    padding-right: 10px;
+}
+.project-desc :last-child {
+    margin-top: auto;
+    font-size: 10px;
+}
+
+.projects-sdsc {
+    padding-top: 6px;
+}
+
+.form-select {
+    background-color: $cor-projeto;
+}

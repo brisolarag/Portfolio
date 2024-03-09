@@ -46,14 +46,15 @@ $cor-projeto: rgb(255, 255, 255);
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    padding: 1vw;
+    overflow-y: scroll;
+
     
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-auto-rows: 135px;
     gap:15px;
     
-    padding: 1vw;
-    overflow-y: scroll;
     scrollbar-width: 0;
 }
 .projects-content::-webkit-scrollbar {
@@ -67,15 +68,15 @@ $cor-projeto: rgb(255, 255, 255);
     width: 100%;
     max-width: 560px;
     background-color: $cor-projeto;
-
     border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    
     padding: 5px;
 
     grid-template-columns: 70% 30%;
     display: grid;
     overflow: hidden;
     
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
 
@@ -128,4 +129,66 @@ $cor-projeto: rgb(255, 255, 255);
 
 .form-select {
     background-color: $cor-projeto;
+}
+
+
+
+
+.project-show {
+    padding: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.project-show-content {
+    border-radius: 5px;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-show-content h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.project-show-content span {
+    font-size: 0.6em;
+}
+
+.project-show-content h3 {
+    font-weight: bold;
+}
+
+.project-show-content a {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #D04848;
+}
+
+.project-show-content button {
+    margin-bottom: 30px;
+}
+
+.project-show-content-about {
+    width: 100%;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    max-height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+.project-show-content-about::-webkit-scrollbar {
+    display: none;
 }

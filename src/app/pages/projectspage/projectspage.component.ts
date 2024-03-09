@@ -20,6 +20,11 @@ export class ProjectspageComponent {
 
   selectedYear: string = 'all';
 
+
+  projectToShow: any;
+  showModalProject: boolean = false;
+
+
   url: string = '/assets/jsonProjects/projects.json';
 
 
@@ -33,11 +38,27 @@ export class ProjectspageComponent {
   }
 
   get moreBtn(): string {
-    return this.languageService.getCurrentLanguage() === 'en-us' ? '---' : '---';
+    return this.languageService.getCurrentLanguage() === 'en-us' ? 'More' : 'Mais';
   }
+  get voltarLabel(): string {
+    return this.languageService.getCurrentLanguage() === 'en-us' ? 'back' : 'voltar';
+  }
+
+
 
   ngOnInit() {
     this.loadProjects();
+  }
+
+  showProject(item:any) {
+    this.showModalProject = true;
+    this.projectToShow = item;
+    console.log(this.projectToShow)
+  }
+
+  leaveProject() {
+    this.showModalProject = false;
+    this.projectToShow = null;
   }
 
   loadProjects() {

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:4200/projects -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module" src="./Portfolio_files/client"></script>
+
+  
+  <title>Portfolio</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./Portfolio_files/styles.css"><style ng-style-reused="">@import "https://fonts.googleapis.com/css?family=Source+Code+Pro:200";
+
+
+
+#app-content[_ngcontent-ng-c75070416] {
+  background-image: url(https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg);
+  background-size: cover;
+  -webkit-animation: _ngcontent-ng-c75070416_slidein 100s;
+  animation: _ngcontent-ng-c75070416_slidein 100s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@-webkit-keyframes _ngcontent-ng-c75070416_slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+@keyframes _ngcontent-ng-c75070416_slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+#containerapp[_ngcontent-ng-c75070416] {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+.btn-next[_ngcontent-ng-c75070416] {
+  position: absolute;
+  bottom: 10vh;
+}
+.btn-next-left[_ngcontent-ng-c75070416] {
+  left: 1vw;
+}
+.btn-next-right[_ngcontent-ng-c75070416] {
+  right: 1vw;
+}
+#app-content[_ngcontent-ng-c75070416] {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #E5E1DA;
+}
+/*# sourceMappingURL=app.component.css.map */</style><style ng-style-reused="">
+
+.nav-switches[_ngcontent-ng-c921442855] {
+  margin-left: auto;
+}
+.nav-item[_ngcontent-ng-c921442855] {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.download-CV[_ngcontent-ng-c921442855] {
+  font-weight: 700;
+  color: #D04848;
+}
+/*# sourceMappingURL=navbarapp.component.css.map */</style><style ng-style-reused="">
+
+.projects-container[_ngcontent-ng-c942324154] {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.projects-wrapper[_ngcontent-ng-c942324154] {
+  width: 95%;
+  height: 95%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.projects-filter[_ngcontent-ng-c942324154] {
+  width: 100%;
+  height: 13vh;
+  padding: 1vw;
+}
+.projects-filter[_ngcontent-ng-c942324154]   h2[_ngcontent-ng-c942324154] {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.projects-box[_ngcontent-ng-c942324154] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.projects-content[_ngcontent-ng-c942324154] {
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-auto-rows: 135px;
+  gap: 15px;
+  padding: 1vw;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+}
+.projects-content[_ngcontent-ng-c942324154]::-webkit-scrollbar {
+  display: none;
+}
+.projects-project[_ngcontent-ng-c942324154] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 560px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 5px;
+  grid-template-columns: 70% 30%;
+  display: grid;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.project-desc[_ngcontent-ng-c942324154] {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.project-btns[_ngcontent-ng-c942324154] {
+  box-sizing: border-box;
+  display: grid;
+  gap: 5px;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+.project-btns[_ngcontent-ng-c942324154]   button[_ngcontent-ng-c942324154] {
+  border-radius: 5px;
+}
+.project-desc[_ngcontent-ng-c942324154]   h5[_ngcontent-ng-c942324154], .project-desc[_ngcontent-ng-c942324154]   p[_ngcontent-ng-c942324154] {
+  padding-left: 2px;
+  margin: 1px;
+}
+.project-desc[_ngcontent-ng-c942324154]   h5[_ngcontent-ng-c942324154] {
+  font-size: 14px;
+  color: #212529;
+  text-shadow: -1px 2px 5px rgb(108, 117, 125);
+}
+.project-desc[_ngcontent-ng-c942324154]   p[_ngcontent-ng-c942324154] {
+  font-size: 12px;
+  color: #3e4347;
+  padding-right: 10px;
+}
+.project-desc[_ngcontent-ng-c942324154]   [_ngcontent-ng-c942324154]:last-child {
+  margin-top: auto;
+  font-size: 10px;
+}
+.projects-sdsc[_ngcontent-ng-c942324154] {
+  padding-top: 6px;
+}
+.form-select[_ngcontent-ng-c942324154] {
+  background-color: rgb(255, 255, 255);
+}
+/*# sourceMappingURL=projectspage.component.css.map */</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c75070416="" ng-version="17.2.3" ng-server-context="ssr"><div _ngcontent-ng-c75070416="" id="containerapp"><app-navbarapp _ngcontent-ng-c75070416="" _nghost-ng-c921442855=""><nav _ngcontent-ng-c921442855="" class="navbar navbar-expand-lg navbar-dark bg-dark px-5"><a _ngcontent-ng-c921442855="" href="http://localhost:4200/#" class="navbar-brand"><img _ngcontent-ng-c921442855="" src="./Portfolio_files/logo.svg" alt="Logo" style="max-height: 50px;"></a><button _ngcontent-ng-c921442855="" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span _ngcontent-ng-c921442855="" class="navbar-toggler-icon"></span></button><div _ngcontent-ng-c921442855="" id="navbarNav" class="collapse navbar-collapse"><ul _ngcontent-ng-c921442855="" class="navbar-nav mr-auto ml-auto"><li _ngcontent-ng-c921442855="" class="nav-item"><a _ngcontent-ng-c921442855="" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Início</a></li><li _ngcontent-ng-c921442855="" class="nav-item"><a _ngcontent-ng-c921442855="" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Projetos</a></li><li _ngcontent-ng-c921442855="" class="nav-item"><a _ngcontent-ng-c921442855="" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Redes Sociais</a></li><li _ngcontent-ng-c921442855="" class="nav-item"><a _ngcontent-ng-c921442855="" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Envie uma mensagem</a></li><li _ngcontent-ng-c921442855="" class="nav-item"><a _ngcontent-ng-c921442855="" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link download-CV">Baixar CV</a></li></ul><div _ngcontent-ng-c921442855="" role="group" aria-label="Basic radio toggle button group" class="btn-group ml-auto nav-switches"><input _ngcontent-ng-c921442855="" type="radio" name="options-base" id="optionPTBR" autocomplete="off" checked="" class="btn-check"><label _ngcontent-ng-c921442855="" for="optionPTBR" class="btn btn-outline-light">pt-br</label><input _ngcontent-ng-c921442855="" type="radio" name="options-base" id="optionENUS" autocomplete="off" class="btn-check"><label _ngcontent-ng-c921442855="" for="optionENUS" class="btn btn-outline-light">en-us</label></div></div></nav></app-navbarapp><div _ngcontent-ng-c75070416="" id="app-content"><router-outlet _ngcontent-ng-c75070416=""></router-outlet><app-projectspage _nghost-ng-c942324154="" ng-version="17.2.3"><div _ngcontent-ng-c942324154="" class="projects-container"><div _ngcontent-ng-c942324154="" class="projects-wrapper"><div _ngcontent-ng-c942324154="" class="projects-filter"><select _ngcontent-ng-c942324154="" aria-label="Large select example" class="form-select form-select-sm mb-3"><option _ngcontent-ng-c942324154="" value="all">Todos projetos</option><option _ngcontent-ng-c942324154="" value="2024">2024</option><option _ngcontent-ng-c942324154="" value="2023">2023</option><option _ngcontent-ng-c942324154="" value="2022">2022</option></select><h2 _ngcontent-ng-c942324154="">Acompanhe meus projetos abaixo:</h2></div><div _ngcontent-ng-c942324154="" class="projects-box"><div _ngcontent-ng-c942324154="" class="projects-content"><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">API (Filmes)</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">API para CRUD de um banco de dados de filmes com avaliação.</p><p _ngcontent-ng-c942324154="">jan/24</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">Árvore AVL e Detecção de Ciclos</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Teste lógico sobre árvore AVL e detecção de ciclos.</p><p _ngcontent-ng-c942324154="">jan/24</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">Portfólio</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Portfólio para divulgação de projetos.</p><p _ngcontent-ng-c942324154="">jan/24</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">API (Mensagens para o Portfólio)</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">API para controle de mensagens enviadas ao portfólio.</p><p _ngcontent-ng-c942324154="">fev/24</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">TRemover</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Sistema para limpeza de arquivos temporários no Windows.</p><p _ngcontent-ng-c942324154="">jan/23</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">Mensagens para o Portfólio</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Sistema para exibir mensagens enviadas ao portfólio em uma página privada.</p><p _ngcontent-ng-c942324154="">mar/23</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">BrainREST</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Temporizador pomodoro com estatísticas.</p><p _ngcontent-ng-c942324154="">set/23</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">Estágios na PUCRS</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Automação para obter informações sobre estágios disponíveis na PUCRS Carreiras.</p><p _ngcontent-ng-c942324154="">jan/22</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">Sistema de Login (Backend)</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Sistema de backend para autenticação segura e verificação de login.</p><p _ngcontent-ng-c942324154="">abr/22</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">ChromeTrack</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Extensão para rastreamento de encomendas no Google Chrome.</p><p _ngcontent-ng-c942324154="">mai/22</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><div _ngcontent-ng-c942324154="" class="projects-project"><div _ngcontent-ng-c942324154="" class="project-desc"><h5 _ngcontent-ng-c942324154="">Lista de Tarefas (FrontEnd)</h5><p _ngcontent-ng-c942324154="" class="projects-sdsc">Página para adicionar, editar e excluir tarefas em uma lista de afazeres.</p><p _ngcontent-ng-c942324154="">mai/22</p></div><div _ngcontent-ng-c942324154="" class="project-btns"><button _ngcontent-ng-c942324154="" type="button" class="btn btn-secondary btn-sm btn-projects-2">---</button><button _ngcontent-ng-c942324154="" type="button" class="btn btn-dark btn-sm btn-projects-1 disabled">Github</button></div></div><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--></div></div></div></div></app-projectspage><!--container--></div></div></app-root>
+<script src="./Portfolio_files/polyfills.js.transferir" type="module"></script><script src="./Portfolio_files/main.js.transferir" type="module"></script>
+
+<script id="ng-state" type="application/json">{"3488332186":{"b":[{"id":8,"titleBr":"API (Filmes)","titleUs":"API (Movies)","link":"https://github.com/brisolarag/desiafiotecnicoubots","shortDescBr":"API para CRUD de um banco de dados de filmes com avaliação.","shortDescUs":"API for CRUD of a movie database with rating.","descriptionBr":"Foi um desafio pela empresa Ubots, onde eu precisava criar um API para CRUD de um banco de dados com filmes, com a possibilidade de avaliar um filme","descriptionUs":"It was a challenge by the company Ubots, where I needed to create an API for CRUD of a movie database, with the possibility of evaluating a movie.","dataBr":"jan/24","dataUs":"jan/24","ano":2024},{"id":9,"titleBr":"Árvore AVL e Detecção de Ciclos","titleUs":"AVL Tree and Cycle Detection","link":"https://github.com/brisolarag/desiafiotecnicoubots2","shortDescBr":"Teste lógico sobre árvore AVL e detecção de ciclos.","shortDescUs":"Logical test on AVL tree and cycle detection.","descriptionBr":"Segunda etapa do teste realizado pela Ubots, envolvendo um teste lógico pelo Hackerrank de Árvore AVL e Detecção de Ciclos","descriptionUs":"Second stage of the test conducted by Ubots, involving a logical test by Hackerrank of AVL Tree and Cycle Detection","dataBr":"jan/24","dataUs":"jan/24","ano":2024},{"id":10,"titleBr":"Portfólio","titleUs":"Portfolio","link":"https://github.com/brisolarag/portfolio-new","shortDescBr":"Portfólio para divulgação de projetos.","shortDescUs":"Portfolio for project promotion.","descriptionBr":"Criação do meu portfólio para divulgação dos meus projetos","descriptionUs":"Creation of my portfolio for the promotion of my projects","dataBr":"jan/24","dataUs":"jan/24","ano":2024},{"id":11,"titleBr":"API (Mensagens para o Portfólio)","titleUs":"API (Portfolio Messages)","link":"https://github.com/brisolarag/api-portfolio","shortDescBr":"API para controle de mensagens enviadas ao portfólio.","shortDescUs":"API for control of messages sent to the portfolio.","descriptionBr":"Esta é uma API para este portfólio, para ter controle das mensagens enviadas pelo modal de mensagens.","descriptionUs":"This is an API for this portfolio, to have control of the messages sent by the message modal.","dataBr":"fev/24","dataUs":"feb/24","ano":2024},{"id":5,"titleBr":"TRemover","titleUs":"TRemover","link":"https://github.com/brisolarag/TRemover","shortDescBr":"Sistema para limpeza de arquivos temporários no Windows.","shortDescUs":"System for cleaning temporary files on Windows.","descriptionBr":"O sistema de limpeza de arquivos temporários para Windows é uma solução personalizável que oferece a capacidade de gerenciar e adicionar caminhos adicionais para limpeza. Essa flexibilidade permite que os usuários adaptem o sistema de acordo com suas necessidades específicas, garantindo uma limpeza abrangente e eficiente de arquivos temporários em seus computadores. Com essa personalização, é possível manter o sistema livre de dados desnecessários, melhorando o desempenho e liberando espaço em disco conforme desejado.","descriptionUs":"The temporary file cleanup system for Windows is a customizable solution that provides the ability to manage and add additional paths for cleanup. This flexibility allows users to adapt the system according to their specific needs, ensuring comprehensive and efficient cleanup of temporary files on their computers. With this customization, it is possible to keep the system free from unnecessary data, improving performance and freeing up disk space as desired.","dataBr":"jan/23","dataUs":"jan/23","ano":2023},{"id":6,"titleBr":"Mensagens para o Portfólio","titleUs":"Portfolio Messages","link":"https://github.com/brisolarag/controle-de-mensagens-portfolio","shortDescBr":"Sistema para exibir mensagens enviadas ao portfólio em uma página privada.","shortDescUs":"System to display messages sent to the portfolio on a private page.","descriptionBr":"É um sistema que pega as mensagens que são enviadas ao meu portfólio (esta página) e mostra em outra página privada minha, que fornece as informações em forma de tabela, onde eu consigo redirecionar para meu email, ou whatsapp.","descriptionUs":"It is a system that takes the messages that are sent to my portfolio (this page) and shows them on another private page of mine, which provides the information in the form of a table, where I can redirect to my email or WhatsApp.","dataBr":"mar/23","dataUs":"mar/23","ano":2023},{"id":7,"titleBr":"BrainREST","titleUs":"BrainREST","link":"https://github.com/brisolarag/BrainREST","shortDescBr":"Temporizador pomodoro com estatísticas.","shortDescUs":"Pomodoro timer with statistics.","descriptionBr":"Um temporizador pomodoro, que guarda as estatísticas.","descriptionUs":"A pomodoro timer, which saves statistics.","dataBr":"set/23","dataUs":"sep/23","ano":2023},{"id":1,"titleBr":"Estágios na PUCRS","titleUs":"Internships at PUCRS","link":"https://github.com/brisolarag/visualizadorEstagiosPUCRS","shortDescBr":"Automação para obter informações sobre estágios disponíveis na PUCRS Carreiras.","shortDescUs":"Automation to obtain information about available internships at PUCRS Careers.","descriptionBr":"A automação foi desenvolvida em Python, utilizando as bibliotecas Selenium e OpenPyxl, e tem a capacidade de exportar informações sobre os estágios disponíveis no site PUCRS Carreiras de acordo com o curso selecionado. Essa solução automatizada simplifica o processo de obtenção de informações sobre estágios, futuramente devo implementar uma função de notificação por whatsapp.","descriptionUs":"The automation was developed in Python, using the Selenium and OpenPyxl libraries, and has the ability to export information about internships available on the PUCRS Careers website according to the selected course. This automated solution simplifies the process of obtaining information about internships, and in the future, I plan to implement a WhatsApp notification function.","dataBr":"jan/22","dataUs":"jan/22","ano":2022},{"id":2,"titleBr":"Sistema de Login (Backend)","titleUs":"Login System (Backend)","link":"https://github.com/brisolarag/SistemaDeLogin","shortDescBr":"Sistema de backend para autenticação segura e verificação de login.","shortDescUs":"Backend system for secure authentication and login verification.","descriptionBr":"O sistema de backend foi desenvolvido usando Node.js, com as bibliotecas JsonWebTokens e Bcrypt, para oferecer funcionalidades de autenticação e verificação de login. Além disso, foi implementado um sistema de cadastro. Esse conjunto de recursos permite aos usuários criar contas, fazer login de forma segura e autenticar-se para acessar funcionalidades restritas. A utilização do JsonWebTokens proporciona uma camada adicional de segurança, enquanto o Bcrypt garante que as senhas dos usuários sejam armazenadas de forma segura.","descriptionUs":"The backend system was developed using Node.js, with the JsonWebTokens and Bcrypt libraries, to provide authentication and login verification functionalities. Additionally, a registration system has been implemented. This set of features allows users to create accounts, securely log in, and authenticate to access restricted features. The use of JsonWebTokens provides an additional layer of security, while Bcrypt ensures that users' passwords are securely stored.","dataBr":"abr/22","dataUs":"apr/22","ano":2022},{"id":3,"titleBr":"ChromeTrack","titleUs":"ChromeTrack","link":"https://github.com/brisolarag/ChromeTrack","shortDescBr":"Extensão para rastreamento de encomendas no Google Chrome.","shortDescUs":"Extension for package tracking in Google Chrome.","descriptionBr":"A extensão para Google Chrome foi desenvolvida para rastrear encomendas de forma conveniente, utilizando a API do Link&Track. Com essa extensão instalada, os usuários podem inserir os números de rastreamento de suas encomendas diretamente no navegador e obter informações atualizadas sobre o status de entrega.","descriptionUs":"The Google Chrome extension was developed to conveniently track orders using the Link&Track API. With this extension installed, users can enter their tracking numbers directly into the browser and get updated information on the delivery status.","dataBr":"mai/22","dataUs":"may/22","ano":2022},{"id":4,"titleBr":"Lista de Tarefas (FrontEnd)","titleUs":"TodoList (FrontEnd)","link":"https://github.com/brisolarag/todo-list-frontend","shortDescBr":"Página para adicionar, editar e excluir tarefas em uma lista de afazeres.","shortDescUs":"Page to add, edit, and delete tasks on a to-do list.","descriptionBr":"Página construída com ReactJs, é uma Lista de Tarefas. Com essa aplicação, os usuários podem adicionar, editar, marcar como concluídas e excluir tarefas em sua lista de afazeres. Além disso, as informações das tarefas são armazenadas em um banco de dados SQL, garantindo que os dados sejam armazenados e possam ser acessados novamente.","descriptionUs":"Page built with ReactJs, it's a TodoList. With this application, users can add, edit, mark as completed, and delete tasks on their to-do list. Additionally, task information is stored in an SQL database, ensuring that data is stored and can be accessed again.","dataBr":"mai/22","dataUs":"may/22","ano":2022}],"h":{},"s":200,"st":"OK","u":"http://localhost:4200/assets/jsonProjects/projects.json","rt":"json"},"__nghData__":[{},{"t":{"16":"t84","17":"t85"},"c":{"16":[{"i":"t85","r":16,"t":{"0":"t86","1":"t88","2":"t89","3":"t90"},"c":{"0":[{"i":"t86","r":12,"t":{"1":"t87"},"c":{"1":[{"i":"t87","r":1,"x":11}]}}],"1":[],"2":[],"3":[]}}],"17":[]}},{"c":{"3":[{"i":"c942324154","r":1}]}}]}</script></body></html>
